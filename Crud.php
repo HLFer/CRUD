@@ -5,11 +5,13 @@ class Crud
 
   function insert($old_data, $atual_data){
 
-
-        echo "<pre> data in<br>";
+        echo "<pre>Dados Antigos <hr>";
         var_dump($old_data);
-        echo "</pre>";
-    /*
+        echo "</pre><hr>";
+
+        echo "<pre>Dados Novos <hr>";
+        var_dump($atual_data);
+        echo "</pre><hr>";
 
     //$merge recebe a "soma" dos dois arrays
     $merge = array_merge($old_data, $atual_data);
@@ -36,8 +38,8 @@ class Crud
       funtion createQuery(){
         return $query;
       }
-
-    }*/
+      */
+    }
   }
 
   function delete($old_data, $atual_data){
